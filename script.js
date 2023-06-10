@@ -175,13 +175,13 @@ let bindCompleteItems = function(taskItem, deleteButtonClick){
   deleteButton.onclick = deleteButtonClick;
 }
 
-// for(let i=0; i< toDoUl.children.length; i++){
-//   bindInCompleteItems(completeUl.children[i], completeTask);
-// }
+for(let i=0; i< toDoUl.children.length; i++){
+  bindInCompleteItems(toDoUl.children[i], completeTask);
+}
 
-// for(let i=0; i< completeUl.children.length; i++){
-//   bindCompleteItems(completeUl.children[i], deleteTask);
-// }
+for(let i=0; i< completeUl.children.length; i++){
+  bindCompleteItems(completeUl.children[i], deleteTask);
+}
 
 form.addEventListener('submit', addTask);
 
